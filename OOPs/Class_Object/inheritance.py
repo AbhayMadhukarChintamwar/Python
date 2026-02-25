@@ -9,8 +9,7 @@ class Player:
     def get_age(self):
         now = datetime.datetime.now().year
         return now - self.birth_year
-
-
+    
 class TennisPlayer(Player):
     def __init__(self, fname, lname, birth_year):
         super().__init__(fname, lname, birth_year)
